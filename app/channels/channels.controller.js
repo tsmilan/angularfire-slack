@@ -9,6 +9,7 @@ angular.module('angularfireSlackApp')
 		channelsCtrl.channels = channels;
 		channelsCtrl.users = Users.all;
 
+		channelsCtrl.getProfilePhoto = Users.getProfilePhoto;
 		channelsCtrl.getDisplayName = Users.getDisplayName;
 		channelsCtrl.getGravatar = Users.getGravatar;
 

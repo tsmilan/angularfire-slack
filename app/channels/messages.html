@@ -3,7 +3,8 @@
 </div>
 
 <div class="message-wrap" ng-repeat="message in messagesCtrl.messages">
-  <img class="user-pic" ng-src="{{ channelsCtrl.getGravatar(message.uid) }}" />
+  <img ng-show="channelsCtrl.getProfilePhoto(message.uid)" class="user-pic" ng-src="{{channelsCtrl.getProfilePhoto(message.uid).base64}}" />
+  <img ng-hide="channelsCtrl.getProfilePhoto(message.uid)" class="user-pic" ng-src="{{ channelsCtrl.getGravatar(message.uid) }}" />
   <div class="message-info">
     <div class="user-name">
       {{ channelsCtrl.getDisplayName(message.uid) }}

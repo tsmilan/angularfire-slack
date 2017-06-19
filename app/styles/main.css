@@ -205,3 +205,22 @@ body {
   font-weight: normal;
   font-size:10px;
 }
+
+/* Custom styles */
+.profile-photo > img {
+  width: 230px;
+  height: 230px;
+}
+.edit-profile-wrap {
+  width: 100%;
+  /*background-color: #4d394b;*/
+  min-height: 600px;
+}
+.upload-photo-btn {
+  margin-top: 15px;
+}
+.upload-prof-photo-inpt{
+    width: 80%;
+    padding-top: 10px;
+    margin: 0 auto;
+}

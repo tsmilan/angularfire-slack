@@ -15,6 +15,9 @@ angular.module('angularfireSlackApp')
 	  getGravatar: function(uid){
 	  	return '//www.gravatar.com/avatar/' + users.$getRecord(uid).emailHash;
 	  },
+	  getProfilePhoto: function(uid) {
+	  	return users.$getRecord(uid).profilePhoto;
+	  },
 	  setOnline: function(uid){
 		var connected = $firebaseObject(connectedRef);
 		var online = $firebaseArray(usersRef.child(uid+'/online'));
