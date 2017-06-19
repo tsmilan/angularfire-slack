@@ -18,11 +18,17 @@ angular
     $stateProvider
       .state('home', {
         url: '/',
+        controller: 'AuthCtrl as authCtrl',
         templateUrl: 'home/home.html',
         resolve: {
-          requireNoAuth: function($state, Auth){
+          requireNoAuth: function($state, Auth, $timeout){
             return Auth.$requireSignIn().then(function(auth){
-              $state.go('channels');
+             
+              //$timeout(function() { 
+               $state.go('channels');
+              //});   
+               
+             
             }, function(error){
               return;
             });

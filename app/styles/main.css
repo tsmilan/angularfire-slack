@@ -1,5 +1,7 @@
 body {
   padding: 0;
+  background: #4d394b !important; 
+  color:#fff; 
 }
 
 .page-wrapper {
@@ -33,12 +35,12 @@ body {
   padding-bottom:100px;
 }
 
-.sidebar .slack-name {
+.sidebar .slack-name,.slack-name {
   background:#3E313C;
   padding:15px 0px 15px 15px;
 }
 
-.sidebar .slack-name h2{
+.sidebar .slack-name h2, .slack-name h2{
   color:#fff;
   font-size:18px;
   font-weight:bold;
@@ -213,7 +215,8 @@ body {
 }
 .edit-profile-wrap {
   width: 100%;
-  /*background-color: #4d394b;*/
+  background-color: #fff !important;
+  color: #333;
   min-height: 600px;
 }
 .upload-photo-btn {
@@ -223,4 +226,78 @@ body {
     width: 80%;
     padding-top: 10px;
     margin: 0 auto;
+}
+
+
+#register-btn {
+  font-weight: bold;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+  color: #111;
+
+}
+.form-signin > p {
+  padding:10px;
+}
+.form-signin-heading {
+  text-align: center;
+}
+  .form-signin-heading,
+  .checkbox {
+    margin-bottom: 30px;
+  }
+
+  .checkbox {
+    font-weight: normal;
+  }
+  .form-signin > button {
+    margin-top: 15px;
+  }
+
+  #username, #password {
+    width: 308px;
+  }
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+.message-pane{
+    color: #333;
+    background-color: #fff;
+}
+#fireSlackp {
+  margin-top: 20px;
+}
+.error-msg {
+  padding-bottom: 10px;
+}
+.back-btn {
+  margin-top: 50px;
 }
