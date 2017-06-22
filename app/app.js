@@ -23,12 +23,7 @@ angular
         resolve: {
           requireNoAuth: function($state, Auth, $timeout){
             return Auth.$requireSignIn().then(function(auth){
-             
-              //$timeout(function() { 
-               $state.go('channels');
-              //});   
-               
-             
+               $state.go('channels');             
             }, function(error){
               return;
             });
@@ -56,7 +51,7 @@ angular
         resolve: {
           requireNoAuth: function($state, Auth){
             return Auth.$requireSignIn().then(function(auth){
-              $state.go('home');
+              $state.go('profile');
             }, function(error){
               return;
             });

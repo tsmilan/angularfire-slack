@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fireslack-78579"
+    "default": "fireslack-78579",
+    "fireslack": "fireslack-78579"
   }
 }

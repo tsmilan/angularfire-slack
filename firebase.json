@@ -1,4 +1,7 @@
 {
-  "firebase": "slack",
-  "public": "dist"
+  "firebase": "fireslack",
+  "public": "dist",
+  "database": {
+    "rules": "database.rules.json"
+  }
 }
